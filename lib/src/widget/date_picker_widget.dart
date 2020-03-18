@@ -209,7 +209,7 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
       child: Container(
         padding: EdgeInsets.all(8.0),
         height: widget.pickerTheme.pickerHeight,
-        decoration: BoxDecoration(color: widget.pickerTheme.backgroundColor),
+//        decoration: BoxDecoration(color: widget.pickerTheme.backgroundColor),
         child: CupertinoPicker.builder(
           backgroundColor: widget.pickerTheme.backgroundColor,
           scrollController: scrollCtrl,
@@ -224,6 +224,7 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
   }
 
   Widget _renderDatePickerItemComponent(int value, String format) {
+    print("Date current params : " + widget.initialDateTime.toString());
     return Container(
       height: widget.pickerTheme.itemHeight,
       alignment: Alignment.center,
