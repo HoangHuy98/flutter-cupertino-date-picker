@@ -214,6 +214,8 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
         child: CupertinoPicker.builder(
           backgroundColor: widget.pickerTheme.backgroundColor,
           scrollController: scrollCtrl,
+          diameterRatio: 4,
+          squeeze: 1.45,
           itemExtent: widget.pickerTheme.itemHeight,
           onSelectedItemChanged: valueChanged,
           childCount: valueRange.last - valueRange.first + 1,
