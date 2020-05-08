@@ -20,7 +20,7 @@ const double DATETIME_PICKER_ITEM_HEIGHT = 40.0;
 const TextStyle DATETIME_PICKER_ITEM_TEXT_STYLE =
     const TextStyle(color: Colors.white, fontSize: 16.0);
 
-class DateTimePickerTheme extends Diagnosticable {
+class DateTimePickerTheme {
   final cancelDefault = const Text('OK');
 
   /// DateTimePicker theme.
